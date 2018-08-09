@@ -1,7 +1,7 @@
 # Satshakit USB Hat
 *A fabbable USB shield for the SatshaKit*
 
-**This project is at a really early stage, untested and unpolished**
+**This project is at a really early stage, untested and unpolished. Tests and updates will be posted when done.**
 
 | <img src="Media/Satshakit USB Hat - CNC top.jpg" alt="pic"> | <img src="Media/Satshakit USB Hat - CNC bottom.jpg" alt="pic"> |
 |-----|-----|
