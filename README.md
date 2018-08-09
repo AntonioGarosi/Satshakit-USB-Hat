@@ -3,8 +3,12 @@
 
 **This project is at a really early stage, untested and unpolished**
 
-<img src="Media/Satshakit USB Hat - CNC bottom.jpg" alt="pic">
-<img src="Media/Satshakit USB Hat - CNC top.jpg" alt="pic">
+| <img src="Media/Satshakit USB Hat - CNC top.jpg" alt="pic"> | <img src="Media/Satshakit USB Hat - CNC bottom.jpg" alt="pic"> |
+|-----|-----|
+
+
+
+
 
 For further information regarding Satshakit, visit [its official repository](https://github.com/satshakit/satshakit).
 
