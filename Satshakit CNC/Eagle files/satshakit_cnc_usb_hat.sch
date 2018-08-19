@@ -1665,18 +1665,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-2.54" y="0" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="2-SMD-5X3MM">
-<wire x1="-2.5" y1="1.3" x2="-2.5" y2="1.6" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="21"/>
-<wire x1="2.5" y1="1.6" x2="2.5" y2="1.3" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-1.3" x2="2.5" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="-1.3" width="0.127" layer="21"/>
-<smd name="P$1" x="-2" y="0" dx="2" dy="2.4" layer="1"/>
-<smd name="P$2" x="2" y="0" dx="2" dy="2.4" layer="1"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA16U2">
@@ -1762,21 +1750,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pin name="VBUS" x="-2.54" y="-2.54" visible="pad" length="short"/>
 <pin name="GND" x="-2.54" y="-5.08" visible="pad" length="short"/>
 <pin name="SHIELD" x="2.54" y="-10.16" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
-<symbol name="CRYSTAL">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="-1.016" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.016" y="-4.318" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1903,22 +1876,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL">
-<gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2-SMD-5X3MM">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
@@ -1973,6 +1930,84 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="crystal" urn="urn:adsk.eagle:library:204">
+<description>&lt;b&gt;Crystals and Crystal Resonators&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="CSM-7X-DU" urn="urn:adsk.eagle:footprint:12034/1" library_version="1">
+<description>&lt;b&gt;SMD CRYSTAL&lt;/b&gt;&lt;p&gt;
+Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
+<wire x1="-5.575" y1="2.3" x2="-2.725" y2="2.3" width="0.2032" layer="51"/>
+<wire x1="-2.725" y1="2.3" x2="2.75" y2="2.3" width="0.2032" layer="51"/>
+<wire x1="2.75" y1="2.3" x2="5.55" y2="2.3" width="0.2032" layer="51"/>
+<wire x1="5.55" y1="2.3" x2="5.55" y2="-2.3" width="0.2032" layer="51"/>
+<wire x1="5.55" y1="-2.3" x2="-2.75" y2="-2.3" width="0.2032" layer="51"/>
+<wire x1="-2.75" y1="-2.3" x2="-5.575" y2="-2.3" width="0.2032" layer="51"/>
+<wire x1="-5.575" y1="-2.3" x2="-5.575" y2="2.3" width="0.2032" layer="51"/>
+<wire x1="-2.75" y1="-2.3" x2="-2.725" y2="2.3" width="0.2032" layer="51" curve="-180"/>
+<wire x1="2.75" y1="2.3" x2="2.725" y2="-2.3" width="0.2032" layer="51" curve="-180"/>
+<smd name="1" x="-4.75" y="0" dx="5.5" dy="2" layer="1"/>
+<smd name="2" x="4.75" y="0" dx="5.5" dy="2" layer="1"/>
+<text x="-7.6288" y="2.5334" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.6288" y="-4.3114" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="CSM-7X-DU" urn="urn:adsk.eagle:package:12105/1" type="box" library_version="1">
+<description>SMD CRYSTAL
+Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
+<packageinstances>
+<packageinstance name="CSM-7X-DU"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="Q" urn="urn:adsk.eagle:symbol:11991/1" library_version="1">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CSM-7X-DU" urn="urn:adsk.eagle:component:12145/1" prefix="Q" library_version="1">
+<description>&lt;b&gt;SMD CRYSTAL&lt;/b&gt;&lt;p&gt;
+Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
+<gates>
+<gate name="P" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CSM-7X-DU">
+<connects>
+<connect gate="P" pin="1" pad="1"/>
+<connect gate="P" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12105/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1994,7 +2029,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$2" library="fab" deviceset="AVRISP" device="SMD"/>
 <part name="C1" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="100nf"/>
 <part name="U$3" library="fab" deviceset="USB_MINIB" device=""/>
-<part name="C2" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="100nf"/>
 <part name="C3" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="1uf"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -2004,7 +2038,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C4" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10uf"/>
 <part name="R4" library="01_SparkFun" deviceset="RESISTOR" device="1206" value="22 ohm"/>
 <part name="R5" library="01_SparkFun" deviceset="RESISTOR" device="1206" value="22 ohm"/>
-<part name="U$4" library="fab" deviceset="CRYSTAL" device="" value="16Mhz"/>
 <part name="C8" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10pf"/>
 <part name="C5" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10pf"/>
 <part name="C6" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10pf"/>
@@ -2024,6 +2057,8 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="01_SparkFun" deviceset="RESISTOR" device="1206" value="1kohm"/>
 <part name="C9" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="100nf"/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CSM-7X-DU" device="" package3d_urn="urn:adsk.eagle:package:12105/1" value="16Mhz"/>
 </parts>
 <sheets>
 <sheet>
@@ -2042,7 +2077,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$2" gate="G$1" x="132.08" y="71.12"/>
 <instance part="C1" gate="&gt;NAME" x="20.32" y="40.64"/>
 <instance part="U$3" gate="G$1" x="-20.32" y="71.12" rot="R180"/>
-<instance part="C2" gate="&gt;NAME" x="17.78" y="66.04" rot="R180"/>
 <instance part="C3" gate="&gt;NAME" x="20.32" y="81.28"/>
 <instance part="GND1" gate="1" x="12.7" y="35.56"/>
 <instance part="P+1" gate="VCC" x="25.4" y="35.56" rot="R180"/>
@@ -2052,7 +2086,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C4" gate="&gt;NAME" x="-7.62" y="81.28" rot="R270"/>
 <instance part="R4" gate="G$1" x="-7.62" y="71.12" rot="R180"/>
 <instance part="R5" gate="G$1" x="-7.62" y="63.5" rot="R180"/>
-<instance part="U$4" gate="G$1" x="-5.08" y="45.72" rot="R270"/>
 <instance part="C8" gate="&gt;NAME" x="-12.7" y="38.1"/>
 <instance part="C5" gate="&gt;NAME" x="-12.7" y="43.18"/>
 <instance part="C6" gate="&gt;NAME" x="-12.7" y="48.26"/>
@@ -2072,6 +2105,8 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND2" gate="1" x="139.7" y="38.1"/>
 <instance part="R1" gate="G$1" x="132.08" y="43.18" rot="R180"/>
 <instance part="C9" gate="&gt;NAME" x="132.08" y="50.8"/>
+<instance part="P+2" gate="VCC" x="-2.54" y="81.28" rot="MR0"/>
+<instance part="Q1" gate="P" x="-5.08" y="45.72" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2095,23 +2130,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="25.4" y="40.64"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="AVCC"/>
-<wire x1="27.94" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="60.96" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="VCC" pin="VCC"/>
-<pinref part="U$1" gate="G$1" pin="UVCC"/>
-<wire x1="27.94" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="68.58" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C2" gate="&gt;NAME" pin="1"/>
-<wire x1="25.4" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
-<junction x="25.4" y="68.58"/>
-<label x="20.32" y="68.58" size="1.778" layer="95"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<junction x="25.4" y="66.04"/>
-<junction x="25.4" y="60.96"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
 <wire x1="137.16" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="76.2" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
@@ -2131,6 +2149,27 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="63.5" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="93.98" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="25.4" y1="58.42" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="AVCC"/>
+<wire x1="25.4" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="UVCC"/>
+<wire x1="27.94" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="60.96" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<junction x="25.4" y="60.96"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VBUS"/>
+<wire x1="-17.78" y1="73.66" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C4" gate="&gt;NAME" pin="2"/>
+<wire x1="-7.62" y1="73.66" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="76.2" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-7.62" y="76.2"/>
+<wire x1="-7.62" y1="76.2" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="-2.54" y1="78.74" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2154,18 +2193,14 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="12.7" y1="40.64" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="50.8" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
 <junction x="12.7" y="43.18"/>
-<pinref part="C2" gate="&gt;NAME" pin="2"/>
-<wire x1="15.24" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="UGND"/>
 <wire x1="27.94" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="81.28" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="15.24" y="76.2" size="1.778" layer="95"/>
 <pinref part="C3" gate="&gt;NAME" pin="1"/>
-<wire x1="12.7" y1="76.2" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
 <junction x="12.7" y="76.2"/>
-<junction x="12.7" y="66.04"/>
-<wire x1="12.7" y1="66.04" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="76.2" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="&gt;NAME" pin="1"/>
@@ -2196,17 +2231,12 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="SHIELD"/>
-<wire x1="-22.86" y1="81.28" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="83.82" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="83.82" x2="-15.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="88.9" x2="-15.24" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="-15.24" y1="76.2" x2="-17.78" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C4" gate="&gt;NAME" pin="1"/>
 <wire x1="-7.62" y1="86.36" x2="-7.62" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="88.9" x2="-15.24" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="88.9" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
-<junction x="-15.24" y="83.82"/>
 <label x="-15.24" y="76.2" size="1.778" layer="95"/>
 <wire x1="-15.24" y1="76.2" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-15.24" y="76.2"/>
@@ -2234,18 +2264,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="25.4" y1="81.28" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UVCC" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="VBUS"/>
-<wire x1="-17.78" y1="73.66" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C4" gate="&gt;NAME" pin="2"/>
-<wire x1="-7.62" y1="73.66" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
-<label x="-5.08" y="76.2" size="1.778" layer="95"/>
-<wire x1="-7.62" y1="76.2" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-7.62" y="76.2"/>
-<wire x1="-7.62" y1="76.2" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="D-"/>
@@ -2269,7 +2287,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="20.32" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="48.26" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
@@ -2282,6 +2299,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-10.16" y1="48.26" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="48.26" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-7.62" y="50.8"/>
+<pinref part="Q1" gate="P" pin="2"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
@@ -2291,12 +2309,12 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="20.32" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="43.18" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="40.64" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="40.64" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-5.08" y="40.64"/>
 <label x="-5.08" y="38.1" size="1.778" layer="95"/>
+<pinref part="Q1" gate="P" pin="1"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -2494,6 +2512,11 @@ with this version.
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

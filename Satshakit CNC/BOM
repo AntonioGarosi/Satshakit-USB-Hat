@@ -1,40 +1,39 @@
 Partlist
 
-Exported from satshakit_cnc_usb_hat.sch at 09/08/18 09:38
+Exported from satshakit_cnc_usb_hat.brd at 19/08/18 14:59
 
 EAGLE Version 9.1.0 Copyright (c) 1988-2018 Autodesk, Inc.
 
 Assembly variant: 
 
-Part      Value          Device             Package       Library      Sheet
+Part      Value          Package       Library      Position (mm)         Orientation
 
-C1        100nf          CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C2        100nf          CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C3        1uf            CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C4        10uf           CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C5        10pf           CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C6        10pf           CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C7        10pf           CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C8        10pf           CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-C9        100nf          CAP-UNPOLARIZEDFAB C1206FAB      fab          1
-LED_GREEN                LED1206            1206          01_FAB_Hello 1
-PADS_1                   M09LONGPADS        1X09_LONGPADS 01_SparkFun  1
-PADS_2                   PINHD-1X5          1X05          pinhead      1
-PADS_3                   PINHD-1X9          1X09          pinhead      1
-POWER     22-23-2021     22-23-2021         22-23-2021    con-molex    1
-R1        1kohm          RESISTOR1206       1206          01_SparkFun  1
-R2        499            RESISTOR1206       1206          01_SparkFun  1
-R4        22 ohm         RESISTOR1206       1206          01_SparkFun  1
-R5        22 ohm         RESISTOR1206       1206          01_SparkFun  1
-R6        1kohm          RESISTOR1206       1206          01_SparkFun  1
-R7        1kohm          RESISTOR1206       1206          01_SparkFun  1
-R8        499            RESISTOR1206       1206          01_SparkFun  1
-R9        1kohm          RESISTOR1206       1206          01_SparkFun  1
-R10       1kohm          RESISTOR1206       1206          01_SparkFun  1
-RST       M01PTH         M01PTH             1X01          01_SparkFun  1
-RX_YELLOW                LED1206            1206          01_FAB_Hello 1
-TX_YELLOW                LED1206            1206          01_FAB_Hello 1
-U$1       ATMEGA16U2-TQ  ATMEGA16U2-TQ      TQFP32-08THIN fab          1
-U$2       AVRISPSMD      AVRISPSMD          2X03SMD       fab          1
-U$3       USB_MINIB      USB_MINIB          USB_MINIB     fab          1
-U$4       16Mhz          CRYSTAL            2-SMD-5X3MM   fab          1
+C1        100nf          C1206FAB      fab          (55.39 21.121)        R270
+C3        1uf            C1206FAB      fab          (49.679 25.409)       R0
+C4        10uf           C1206FAB      fab          (58.21 21.157)        R90
+C5        10pf           C1206FAB      fab          (28.283 26.562)       R180
+C6        10pf           C1206FAB      fab          (33.579 29.591)       R0
+C7        10pf           C1206FAB      fab          (33.579 26.543)       R0
+C8        10pf           C1206FAB      fab          (28.283 29.718)       R180
+C9        100nf          C1206FAB      fab          (24 35.2)             R0
+LED_GREEN                1206          01_FAB_Hello (34.106 15.875)       R90
+PADS_1                   1X09_LONGPADS 01_SparkFun  (42.418 1.397)        R0
+PADS_2                   1X05          pinhead      (35.941 35.433)       R180
+PADS_3                   1X09          pinhead      (56.007 35.306)       R180
+POWER     22-23-2021     22-23-2021    con-molex    (29.0068 20.193)      R90
+Q1        16Mhz          CSM-7X-DU     crystal      (38.4 24)             R90
+R1        1kohm          1206          01_SparkFun  (64 5.2)              R180
+R2        499            1206          01_SparkFun  (34.136 20.783)       R90
+R4        22 ohm         1206          01_SparkFun  (53.15 29.991)        R0
+R5        22 ohm         1206          01_SparkFun  (57.55 26.763)        R0
+R6        1kohm          1206          01_SparkFun  (42.508 7.599)        R180
+R7        1kohm          1206          01_SparkFun  (42.508 10.012)       R0
+R8        499            1206          01_SparkFun  (54.012 6.776)        R90
+R9        1kohm          1206          01_SparkFun  (28.98 14.318)        R180
+R10       1kohm          1206          01_SparkFun  (28.982 11.803)       R180
+RST       M01PTH         1X01          01_SparkFun  (28.194 35.56)        R0
+RX_YELLOW                1206          01_FAB_Hello (49.418 6.888)        R180
+TX_YELLOW                1206          01_FAB_Hello (49.38 9.255)         R180
+U$1       ATMEGA16U2-TQ  TQFP32-08THIN fab          (47.371 18.161)       R0
+U$2       AVRISPSMD      2X03SMD       fab          (60.116 10.141)       R0
+U$3       USB_MINIB      USB_MINIB     fab          (65.913 24.892)       R180
