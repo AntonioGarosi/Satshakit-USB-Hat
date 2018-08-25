@@ -2038,10 +2038,8 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <part name="C4" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10uf"/>
 <part name="R4" library="01_SparkFun" deviceset="RESISTOR" device="1206" value="22 ohm"/>
 <part name="R5" library="01_SparkFun" deviceset="RESISTOR" device="1206" value="22 ohm"/>
-<part name="C8" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10pf"/>
-<part name="C5" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10pf"/>
-<part name="C6" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10pf"/>
-<part name="C7" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="10pf"/>
+<part name="C8" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="22 pf"/>
+<part name="C7" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="22 pf"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -2086,11 +2084,9 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <instance part="C4" gate="&gt;NAME" x="-7.62" y="81.28" rot="R270"/>
 <instance part="R4" gate="G$1" x="-7.62" y="71.12" rot="R180"/>
 <instance part="R5" gate="G$1" x="-7.62" y="63.5" rot="R180"/>
-<instance part="C8" gate="&gt;NAME" x="-12.7" y="38.1"/>
-<instance part="C5" gate="&gt;NAME" x="-12.7" y="43.18"/>
-<instance part="C6" gate="&gt;NAME" x="-12.7" y="48.26"/>
-<instance part="C7" gate="&gt;NAME" x="-12.7" y="53.34"/>
-<instance part="GND6" gate="1" x="-22.86" y="33.02"/>
+<instance part="C8" gate="&gt;NAME" x="-10.16" y="40.64"/>
+<instance part="C7" gate="&gt;NAME" x="-10.16" y="50.8"/>
+<instance part="GND6" gate="1" x="-17.78" y="35.56"/>
 <instance part="GND7" gate="1" x="-50.8" y="40.64"/>
 <instance part="P+7" gate="VCC" x="-50.8" y="73.66"/>
 <instance part="GND8" gate="1" x="142.24" y="63.5"/>
@@ -2203,28 +2199,6 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <wire x1="12.7" y1="76.2" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C7" gate="&gt;NAME" pin="1"/>
-<wire x1="-17.78" y1="53.34" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="C6" gate="&gt;NAME" pin="1"/>
-<wire x1="-20.32" y1="53.34" x2="-20.32" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="50.8" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="48.26" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="50.8" x2="-22.86" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-20.32" y="50.8"/>
-<wire x1="-22.86" y1="50.8" x2="-22.86" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="C5" gate="&gt;NAME" pin="1"/>
-<wire x1="-17.78" y1="43.18" x2="-20.32" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C8" gate="&gt;NAME" pin="1"/>
-<wire x1="-20.32" y1="43.18" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="40.64" x2="-20.32" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="38.1" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-20.32" y="40.64"/>
-<wire x1="-22.86" y1="40.64" x2="-22.86" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-22.86" y="40.64"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="137.16" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="68.58" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
@@ -2246,6 +2220,16 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="40.64" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C8" gate="&gt;NAME" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="-15.24" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="40.64" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C7" gate="&gt;NAME" pin="1"/>
+<wire x1="-15.24" y1="50.8" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="50.8" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-17.78" y="40.64"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -2289,17 +2273,11 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <segment>
 <wire x1="-5.08" y1="48.26" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-5.08" y="50.8"/>
 <label x="-5.08" y="50.8" size="1.778" layer="95"/>
-<pinref part="C7" gate="&gt;NAME" pin="2"/>
-<wire x1="-10.16" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="53.34" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C6" gate="&gt;NAME" pin="2"/>
-<wire x1="-10.16" y1="48.26" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="48.26" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-7.62" y="50.8"/>
 <pinref part="Q1" gate="P" pin="2"/>
+<pinref part="C7" gate="&gt;NAME" pin="2"/>
+<wire x1="-7.62" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-5.08" y="50.8"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
@@ -2311,10 +2289,11 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <segment>
 <wire x1="-5.08" y1="43.18" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="40.64" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="40.64" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-5.08" y="40.64"/>
 <label x="-5.08" y="38.1" size="1.778" layer="95"/>
 <pinref part="Q1" gate="P" pin="1"/>
+<pinref part="C8" gate="&gt;NAME" pin="2"/>
+<wire x1="-5.08" y1="40.64" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-5.08" y="40.64"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -2339,15 +2318,6 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="U$1" gate="G$1" pin="D+"/>
 <wire x1="27.94" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 <label x="25.4" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="C5" gate="&gt;NAME" pin="2"/>
-<wire x1="-10.16" y1="43.18" x2="-7.62" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="43.18" x2="-7.62" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C8" gate="&gt;NAME" pin="2"/>
-<wire x1="-7.62" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">

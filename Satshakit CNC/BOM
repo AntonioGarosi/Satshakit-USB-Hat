@@ -1,6 +1,6 @@
 Partlist
 
-Exported from satshakit_cnc_usb_hat.brd at 19/08/18 14:59
+Exported from satshakit_cnc_usb_hat.brd at 25/08/18 14:51
 
 EAGLE Version 9.1.0 Copyright (c) 1988-2018 Autodesk, Inc.
 
@@ -11,10 +11,8 @@ Part      Value          Package       Library      Position (mm)         Orient
 C1        100nf          C1206FAB      fab          (55.39 21.121)        R270
 C3        1uf            C1206FAB      fab          (49.679 25.409)       R0
 C4        10uf           C1206FAB      fab          (58.21 21.157)        R90
-C5        10pf           C1206FAB      fab          (28.283 26.562)       R180
-C6        10pf           C1206FAB      fab          (33.579 29.591)       R0
-C7        10pf           C1206FAB      fab          (33.579 26.543)       R0
-C8        10pf           C1206FAB      fab          (28.283 29.718)       R180
+C7        22 pf          C1206FAB      fab          (29.979 30.143)       R0
+C8        22 pf          C1206FAB      fab          (30.117 25.882)       R0
 C9        100nf          C1206FAB      fab          (24 35.2)             R0
 LED_GREEN                1206          01_FAB_Hello (34.106 15.875)       R90
 PADS_1                   1X09_LONGPADS 01_SparkFun  (42.418 1.397)        R0
